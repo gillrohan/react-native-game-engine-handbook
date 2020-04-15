@@ -11,14 +11,14 @@ export default class GameEngineExample extends PureComponent {
 
   render() {
     return (
-      <GameEngine 
-        style={styles.container} 
+      <GameEngine
+        style={styles.container}
         systems={[MoveFinger]}
-        entities={{ 
-          1: { position: [40, 200],   renderer: <Finger />}, 
-          2: { position: [100, 200], renderer: <Finger />}, 
-          3: { position: [160, 200], renderer: <Finger />}, 
-          4: { position: [220, 200], renderer: <Finger />}, 
+        entities={{
+          1: { position: [40, 200],   renderer: <Finger />},
+          2: { position: [100, 200], renderer: <Finger />},
+          3: { position: [160, 200], renderer: <Finger />},
+          4: { position: [220, 200], renderer: <Finger />},
           5: { position: [280, 200], renderer: <Finger />}
         }}>
 
@@ -32,6 +32,6 @@ export default class GameEngineExample extends PureComponent {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF"
+    backgroundColor: "#F1F"
   }
 });
